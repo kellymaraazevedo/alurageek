@@ -1,5 +1,5 @@
 
-// Função para carregar os produtos na página
+
 function carregarProdutos() {
     const listaProdutos = document.getElementById("products-list");
     listaProdutos.innerHTML = '';
@@ -16,7 +16,7 @@ function carregarProdutos() {
     });
 }
 
-// Função para adicionar um novo produto
+
 document.getElementById("product-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -27,14 +27,14 @@ document.getElementById("product-form").addEventListener("submit", function (eve
     const novoProduto = { nome, preco, id };
     produtos.push(novoProduto);
 
-    carregarProdutos(); // Recarrega a lista de produtos
+    carregarProdutos(); 
 
-    // Limpar os campos do formulário
+    
     document.getElementById("product-form").reset();
 });
 
-// Função para remover um produto
+
 function removerProduto(index) {
     produtos.splice(index, 1);
-    carregarProdutos(); // Recarrega a lista de produtos
+    carregarProdutos(); 
 }
