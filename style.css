@@ -108,9 +108,9 @@ h1 {
     margin-top: 50px; 
 }
 
-/* Responsividade - Ajusta o tamanho da fonte em telas menores */
+
 @media (max-width: 600px) {
     .container-rodape p {
-        font-size: 12px; /* Reduz o tamanho da fonte em telas pequenas */
+        font-size: 12px; 
     }
 }
